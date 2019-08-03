@@ -1,0 +1,4 @@
+#should be located in c:\users\<username>\documents\gitmakedir\
+git_user = user@user.com
+git_password = yourpassword
+git_path = https://github.com/<account>/
