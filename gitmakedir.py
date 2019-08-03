@@ -11,10 +11,10 @@ def get_settings():
 	if os.name == "nt":
 		path_to_settings = os.getenv("HOMEPATH")+"\\Documents\\gitmakedir\\settings.txt"
 	elif os.name == "posix":
-		path_to_settings = os.getenv("HOMEPATH")+"/Documents/gitmakedir/settings.txt"
+		path_to_settings = os.getenv("HOME")+"/Documents/gitmakedir/settings.txt"
 	else:
 		sys.exit("Could not detect OS")
-		
+
 	if os.path.exists(path_to_settings):
 		with open(path_to_settings, "r") as f:
 			for setting in f:
